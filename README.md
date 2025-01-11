@@ -39,6 +39,19 @@ A robust Spring Boot backend service powering real-time geolocation alerts with 
 * WebSocket client tests
 * Security tests
 
+## 🛠️ Tech Stack
+
+* Spring Boot 3.x
+* PostgreSQL 14 with PostGIS
+* Flyway Migration
+* Spring Security
+* Spring WebSocket
+* JPA/Hibernate Spatial
+* Mockito
+* Junit5
+* Jib
+* Docker
+
 ## 🚀 Quick Start
 
 #### Clone repository
@@ -75,14 +88,6 @@ docker run -p 8080:8080 luxprotect-backend
 * │   └── resources/
 * │       └── db/migration/      # Flyway migrations
 
-## 🛠️ Tech Stack
-
-* Spring Boot 3.x
-* PostgreSQL 15 with PostGIS
-* Flyway Migration
-* Spring Security
-* Spring WebSocket
-* JPA/Hibernate Spatial
 
 ## 📚 API Documentation
 
@@ -257,6 +262,6 @@ file: [image file]
 
 ##   🔗 Links
 
-1. [ ] API Documentation
+1. [O] API Documentation
 2. [ ] Database Schema
 3. [ ] Security Guide
