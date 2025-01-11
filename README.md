@@ -178,7 +178,7 @@ docker run -p 8080:8080 luxprotect-backend
 "message": "Nearby alerts retrieved successfully"
 }`
 
-#### 👤 Customer Controller (/api/v1/customers)
+### 👤 Customer Controller (/api/v1/customers)
 
 * ##### **Register Customer**
 
@@ -262,6 +262,6 @@ file: [image file]
 
 ##   🔗 Links
 
-1. [O] API Documentation
+1. [ ] API Documentation
 2. [ ] Database Schema
 3. [ ] Security Guide
