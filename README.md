@@ -127,7 +127,7 @@ docker run -p 8080:8080 luxprotect-backend
 "message": "Alert retrieved successfully"
 }`
 
-##### **Get All Alerts**
+* ##### **Get All Alerts**
 
 **GET** /api/v1/alerts
 
@@ -144,7 +144,7 @@ docker run -p 8080:8080 luxprotect-backend
 "message": "All alerts retrieved successfully"
 }`
 
-##### **Update Alert**
+* ##### **Update Alert**
 
 **PUT** /api/v1/alerts/{id}
 **Authorization**: Bearer {token}
@@ -157,7 +157,7 @@ docker run -p 8080:8080 luxprotect-backend
 "description": "Updated emergency"
 }`
 
-##### **Get Nearby Alerts**
+* ##### **Get Nearby Alerts**
 
 **GET** /api/v1/alerts/nearby?latitude=40.7128&longitude=-74.0060&radius=10.0
 
@@ -175,7 +175,7 @@ docker run -p 8080:8080 luxprotect-backend
 
 #### 👤 Customer Controller (/api/v1/customers)
 
-##### **Register Customer**
+* ##### **Register Customer**
 
 **POST** /api/v1/customers
 **Content-Type:** application/json
@@ -195,7 +195,7 @@ docker run -p 8080:8080 luxprotect-backend
 "message": "Customer registered successfully"
 }
 `
-##### **Get Customer Profile**
+* ##### **Get Customer Profile**
 
 **GET** /api/v1/customers/{customerId}
 **Authorization:** Bearer {token}
@@ -210,7 +210,7 @@ docker run -p 8080:8080 luxprotect-backend
 "message": "Customer retrieved successfully"
 }`
 
-##### **Upload Profile Image**
+* ##### **Upload Profile Image**
 
 **POST** /api/v1/customers/{customerId}/profile-image
 **Authorization**: Bearer {token}
@@ -226,7 +226,7 @@ file: [image file]
 
 ### 🔄 WebSocket Controller
 
-##### **Location Updates**
+* ##### **Location Updates**
 
 **CONNECT** ws://localhost:8080/ws-alerts
 **Headers**:
@@ -240,7 +240,7 @@ file: [image file]
 "longitude": -74.0060
 }`
 
-##### **Receive Notifications**
+* ##### **Receive Notifications**
 
 **SUBSCRIBE** /topic/nearby-alerts
 
