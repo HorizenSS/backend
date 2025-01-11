@@ -88,7 +88,7 @@ docker run -p 8080:8080 luxprotect-backend
 
 ### 🎯 Alert Controller (/api/v1/alerts)
 
-**##### Create Alert**
+* ##### **Create Alert**
 
 **POST** /api/v1/alerts
 **Authorization**: Bearer {token}
@@ -112,7 +112,7 @@ docker run -p 8080:8080 luxprotect-backend
 "message": "Alert created successfully"
 }`
 
-##### **Get Alert by ID**
+* ##### **Get Alert by ID**
 
 **GET** /api/v1/alerts/{id}
 
