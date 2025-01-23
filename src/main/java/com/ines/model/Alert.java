@@ -1,7 +1,6 @@
 package com.ines.model;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
@@ -39,6 +38,7 @@ public class Alert {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false) // Updated column name
+    @JsonBackReference
     private Customer user;
 
     @Column(nullable = false)

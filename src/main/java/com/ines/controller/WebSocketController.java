@@ -22,13 +22,13 @@ public class WebSocketController {
     private final SimpMessagingTemplate messagingTemplate;
     private final CustomerRepository customerRepository;
 
-    @MessageMapping("/location/{userId}")
+    @MessageMapping("/location/{email}")
     @SendTo("/topic/nearby-alerts")
-    public void processLocation(@DestinationVariable("userId") Long userId, GeoLocation location) {
-        Customer user = customerRepository.findById(Math.toIntExact(userId))
+    public void processLocation(@DestinationVariable String email, GeoLocation location) {
+        Customer user = customerRepository.findByEmail(email)
                 .orElseThrow(() -> new ResourceNotFoundException("Customer not found"));
 
-        locationTrackingService.updateUserLocation(user.getName(), location);
+        locationTrackingService.updateUserLocation(email, location);
     }
 
 
@@ -36,12 +36,12 @@ public class WebSocketController {
         Set<String> nearbyUsers = locationTrackingService.getNearbyUsers(
                 alert.getLatitude(),
                 alert.getLongitude(),
-                10.0
+                5.0
         );
         for (String username : nearbyUsers) {
             org.slf4j.LoggerFactory.getLogger(WebSocketController.class).info("Notifying user: {}", username);
             messagingTemplate.convertAndSend(
-                    "/topic/nearby-alerts",
+                    "/topic/nearby-alerts/" + username,
                     alert
             );
         }

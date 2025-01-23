@@ -20,4 +20,6 @@ public interface CustomerRepository
     int updateProfileImageId(String profileImageId, Integer customerId);
 
     Optional<Customer> findCustomerById(Integer userId);
+
+    Optional<Customer> findByEmail(String email);
 }

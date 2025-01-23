@@ -1,5 +1,6 @@
 package com.ines.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
@@ -58,6 +59,7 @@ public class Customer implements UserDetails {
     private Role role = Role.USER; // Default role
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @JsonManagedReference
     private List<Alert> alerts;
 
     @Column(unique = true)
