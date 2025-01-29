@@ -135,6 +135,7 @@ Below is a breakdown of the main development tasks for the project. These tasks 
 ✅ [DONE] Implement JWT and and role-based access control for different user types.
 ---
 ### 🎨 Frontend Setup
+
 ✅ **[DONE]** Initialize **Angular project** and set up core and shared modules.  
 ✅ **[DONE]** Configure **routing** for major sections, such as **Map, alert Reporting...**.  
 ✅ **[DONE]** Integrate **LeafletJS Map** for interactive map features.
