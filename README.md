@@ -48,7 +48,7 @@ A robust Spring Boot backend service powering real-time geolocation alerts with 
 To run the project on your local environment, follow these steps:
 
 ### **_SETUP DATABASE_**
-### Run PostgreSQL in Docker
+#### Run PostgreSQL in Docker:
 #### **1. Install Docker (If Not Installed)**
 #### **Windows & macOS:**
 Download and install **Docker Desktop** from [Docker's official site](https://www.docker.com/get-started/).
@@ -128,10 +128,10 @@ GRANT ALL PRIVILEGES ON DATABASE lux_protect TO ines;
 
 Below is a breakdown of the main development tasks for the project. These tasks will help structure the project as it moves through development:
 ### 🛠 Backend Setup
-✅ **[DONE]** Initialize **Spring Boot** and configure dependencies.  
-✅ **[DONE]** Set up **database connections** for PostgreSQ using Docker.  
-✅ **[DONE]** Create **User** and **Incident** models and configure **Spring Security**.  
-✅ **[DONE]** Implement **role-based access control** for different user types.
+✅ [DONE] Initialize Spring Boot and configure dependencies. 
+✅ [DONE] Set up database connections for PostgreSQ using Docker.  
+✅ [DONE] Create User** and Incident models and configure Spring Security.  
+✅ [DONE] Implement JWT and and role-based access control for different user types.
 ---
 ### 🎨 Frontend Setup
 ✅ **[DONE]** Initialize **Angular project** and set up core and shared modules.  
