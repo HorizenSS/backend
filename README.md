@@ -127,6 +127,7 @@ GRANT ALL PRIVILEGES ON DATABASE lux_protect TO ines;
 ## 🚀 Project Roadmap
 
 Below is a breakdown of the main development tasks for the project. These tasks will help structure the project as it moves through development:
+---
 ### 🛠 Backend Setup
 ✅ [DONE] Initialize Spring Boot and configure dependencies. 
 ✅ [DONE] Set up database connections for PostgreSQ using Docker.  
@@ -142,7 +143,7 @@ Below is a breakdown of the main development tasks for the project. These tasks 
 🔐 **User Authentication**: ✅ **[DONE]** Implement user registration, login, and authentication (**JWT-based**).  
 🗺 **Map Display**: ✅ **[DONE]** Configure **LeafletJS** for displaying incident markers.  
 📢 **Incident Reporting**: ✅ **[DONE]** Create forms for users to submit incidents and view details.  
-📲 **Notifications**: ✅ **[DONE]** Integrate **Websocket** for real-time notifications.
+📲 **Real-Time notifications**: ✅ **[DONE]** Integrate **Websocket** for real-time notifications.
 ---
 ### 🔍 Testing and Deployment
 ✅ **[DONE]** Set up **unit and integration tests** for frontend and backend.  
