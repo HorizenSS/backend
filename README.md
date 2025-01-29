@@ -114,7 +114,6 @@ GRANT ALL PRIVILEGES ON DATABASE lux_protect TO ines;
 ## 🚀 Project Roadmap
 
 Below is a breakdown of the main development tasks for the project. These tasks will help structure the project as it moves through development:
----
 ### 🛠 Backend Setup
 ✅ **[DONE]** Initialize **Spring Boot** and configure dependencies.  
 ✅ **[DONE]** Set up **database connections** for PostgreSQ using Docker.  
