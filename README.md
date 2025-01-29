@@ -124,32 +124,39 @@ GRANT ALL PRIVILEGES ON DATABASE lux_protect TO ines;
 
 `ng serve`
 
-## 🚀 Project Roadmap
+# 🚀 Project Roadmap
 
 Below is a breakdown of the main development tasks for the project. These tasks will help structure the project as it moves through development:
+
 ---
 ### 🛠 Backend Setup
-✅ [DONE] Initialize Spring Boot and configure dependencies. 
-✅ [DONE] Set up database connections for PostgreSQ using Docker.  
-✅ [DONE] Create User** and Incident models and configure Spring Security.  
-✅ [DONE] Implement JWT and and role-based access control for different user types.
+✅ **[DONE]** Initialize **Spring Boot** and configure dependencies.  
+✅ **[DONE]** Set up **database connections** for PostgreSQL using Docker.  
+✅ **[DONE]** Create **User** and **Incident** models and configure **Spring Security**.  
+✅ **[DONE]** Implement **JWT and role-based access control** for different user types.
+
 ---
 ### 🎨 Frontend Setup
-
 ✅ **[DONE]** Initialize **Angular project** and set up core and shared modules.  
-✅ **[DONE]** Configure **routing** for major sections, such as **Map, alert Reporting...**.  
+✅ **[DONE]** Configure **routing** for major sections, such as **Map, Alert Reporting...**.  
 ✅ **[DONE]** Integrate **LeafletJS Map** for interactive map features.
+
 ---
 ### 🌟 Core Features
 🔐 **User Authentication**: ✅ **[DONE]** Implement user registration, login, and authentication (**JWT-based**).  
 🗺 **Map Display**: ✅ **[DONE]** Configure **LeafletJS** for displaying incident markers.  
 📢 **Incident Reporting**: ✅ **[DONE]** Create forms for users to submit incidents and view details.  
-📲 **Real-Time notifications**: ✅ **[DONE]** Integrate **Websocket** for real-time notifications.
+📲 **Real-Time Notifications**: ✅ **[DONE]** Integrate **WebSocket** for real-time notifications.
+
 ---
 ### 🔍 Testing and Deployment
 ✅ **[DONE]** Set up **unit and integration tests** for frontend and backend.  
 🚀 **[IN PROGRESS]** Deploy the backend and frontend to **AWS** (or other cloud services).  
 ⚙️ **[NOT STARTED]** Configure **CI/CD pipelines** for automatic deployment.
+
+💡 Stay on track and iterate as needed for a smooth development process! 🚀
+
+
 
 ## 🗄️ Project Structure
 
