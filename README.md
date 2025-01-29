@@ -54,13 +54,17 @@ To run the project on your local environment, follow these steps:
 Download and install **Docker Desktop** from [Docker's official site](https://www.docker.com/get-started/).
 #### **Linux:**
 Install Docker using:
+
 `sudo apt update && sudo apt install -y docker.io
 `
 Ensure Docker is running:
-`sudo systemctl start docker
-sudo systemctl enable docker`
+
+`sudo systemctl start docker`
+
+`sudo systemctl enable docker`
 
 #### **2. Pull & Run PostgreSQL**
+
 `docker pull postgres`
 
 `docker run --name lux_protect_db \
@@ -72,15 +76,16 @@ sudo systemctl enable docker`
 
 #### **3. Verify & Access Container**
 Check running containers 
+
 `docker ps`
+
 Restart if stopped
+
 `docker start lux_protect_db`
+
 `docker exec -it lux_protect_db psql -U ines -d lux_protect`
 
 #### **4. Check Database & User**
-`\l  -- List databases
-\du -- List users`
-
 If missing:
 ```sql
 CREATE DATABASE lux_protect;
@@ -96,19 +101,27 @@ GRANT ALL PRIVILEGES ON DATABASE lux_protect TO ines;
 ✅ PostgreSQL is now running locally! 🚀
 
 ### **_SETUP BACKEND_**
-### Clone repository
+#### Clone repository
+
 `git clone https://github.com/yourusername/luxprotect-backend.git`
-### Navigate to the backend directory
-### Run Spring Boot application
+
+#### Navigate to the backend directory
+#### Run Spring Boot application
+
 `./mvnw spring-boot:run`
 
 ### **_SETUP FRONTEND_**
-### Clone repository
+#### Clone repository
+
 `git clone https://github.com/HorizenSS/lux-protect-client.git`
-### Navigate to the frontend directory.
-### Install dependencies
+
+#### Navigate to the frontend directory.
+#### Install dependencies
+
 `npm install`
-### Run the Angular app
+
+#### Run the Angular app
+
 `ng serve`
 
 ## 🚀 Project Roadmap
