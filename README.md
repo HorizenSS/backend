@@ -1,6 +1,6 @@
 # LuxProtect Alert System - Backend 🛡️
 
-A robust Spring Boot backend service powering real-time geolocation alerts with PostgreSQl.
+A robust Spring Boot backend service powering real-time geolocation alerts with PostgreSQL.
 
 ## ✨ Key Features
 
